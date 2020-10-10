@@ -1,0 +1,41 @@
+/*.gridrow{
+    border:2px solid black;
+}
+.cell{
+    border:2px solid black;
+    min-width:10px;
+    min-height:20px;
+    display:inline-block;
+}
+*/
+:root{
+    --grid-rows:1;
+    --grid-cols:1;
+    --temp-row:1;
+    --temp-col:1;
+}
+#container{
+    
+    display:grid;
+    grid-template-rows: repeat(var(--grid-rows),auto);
+    grid-template-columns: repeat(var(--grid-cols),auto);
+    margin:auto;
+    width:80vh;
+    height:80vh;
+}
+.grid-item{
+    border:1px solid black;
+   
+    text-align:center;
+    display:block;
+}
+button{
+    margin-top:10px;
+    padding:20px;
+    box-shadow:2px 2px black;
+}
+button:hover{
+    transform:scale(1.2);
+    background:black;
+    color:white;
+}
